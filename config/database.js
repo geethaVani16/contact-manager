@@ -5,7 +5,7 @@ const CONNECTION_URL=process.env.MONGODB_URL||'mongodb://geetha:secret12345@clus
 
 //DB configuraton 
 mongoose.Promise=global.Promise
-mongoose.connect('mongodb://localhost:27017/contact-manager-jan',{ useNewUrlParser: true })
+mongoose.connect('CONNECTION_URL',{ useNewUrlParser: true })
 .then(function(){
     console.log('connected to DB')
 })
