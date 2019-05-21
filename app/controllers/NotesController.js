@@ -1,6 +1,6 @@
 const express=require('express')
 const router= express.Router()
-const {Note}= require('../models/note.js')
+const {Note}= require('../models/Note.js')
 
 
 //note taking manager//
@@ -27,7 +27,7 @@ router.post('/',function(req,res){
     })
 })
 
-router.get('/',function(req,res){
+router.get('/:id',function(req,res){
     const id=req.params.id
     Note.findById(id)
     .then(function(note){
