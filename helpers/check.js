@@ -26,7 +26,7 @@ const request =require('request')
 
 
 exports.getBirthData = function (formData) {
-    console.log(formData,"jjjj")
+    // console.log(formData,"jjjj")
     const urlData ={
         url:'http://13.233.178.169:8080/api/panchang',
         form:(formData)
