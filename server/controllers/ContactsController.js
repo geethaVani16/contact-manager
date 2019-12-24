@@ -38,7 +38,7 @@ router.get('/:id', authenticateUser, function(req,res){
     .then(function(contact){
         if(contact){// if contact is found in db
             res.send(contact)
-        }else{// if contact is not found in db return {}
+        }else{ // if contact is not found in db return {}
             res.send({})
         }
     })
